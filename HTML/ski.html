@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking</title>
+    <link id="theme-style"
+        rel="stylesheet"
+        href="../CSS/ski_stuely.css"
+        data-light="../CSS/ski_stuely.css"
+        data-dark="../CSS/ski_theme_2.css">
+</head>
+<body>
+<nav>
+    <h2 class="logo">City Mall</h2>
+    <ul>
+        <li><button id="home_bt" class="theme-toggle">Change Mode</button></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="shoping.html">Stores</a></li>
+        <li><a href="Foodcourt.html">Foodcourt</a></li>
+        <li><a href="CINEMA.html">Cinema</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="ski.html">Ski Egypt</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+</nav>
+
+<h1>Ticket Booking Form</h1>
+
+<form class="form_box">
+    <label>Name:</label><br>
+    <input type="text" placeholder="Enter your name"><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" placeholder="Enter your email"><br><br>
+
+    <div class="tickets">
+        <input type="radio" name="ticket" id="standard">
+        <label for="standard">
+            <img src="../IMG/ticket_1 _no_background.png" alt="Standard ticket">
+        </label>
+
+        <input type="radio" name="ticket" id="vip">
+        <label for="vip">
+            <img src="../IMG/ticket_2_no_background.png" alt="VIP ticket">
+        </label>
+
+        <input type="radio" name="ticket" id="premium">
+        <label for="premium">
+            <img src="../IMG/ticket_3_no_background.png" alt="Premium ticket">
+        </label>
+    </div>
+
+    <label>Number of Tickets:</label><br>
+    <input type="number"><br><br>
+
+    <label>Event Date:</label><br>
+    <input type="date"><br><br>
+
+    <input type="submit" value="Book Now">
+    <input type="reset" value="Cancel">
+</form>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

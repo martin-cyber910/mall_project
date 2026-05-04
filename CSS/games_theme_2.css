@@ -1,0 +1,149 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+/* BODY */
+body{
+    background-color: #373856; 
+}
+
+/* NAVBAR */
+nav{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #F1E76D; 
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin-left: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* SEARCH */
+.search-box{
+background-color: #F1E76D;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-box input{
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+/* SECTION BACKGROUND IMAGE */
+.games-section{
+    background-image: url("https:i.ibb.co/bjdMjLwm/9212ad05-7869-402d-bc98-3c3af8033b1b-20260501-153209-0000.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+}
+
+/* GAMES GRID */
+.games{
+    display: grid;
+    grid-template-columns: repeat(3, 250px); 
+    justify-content: center; 
+    gap: 30px;
+}
+
+/* CARD */
+.game-card{
+    background-color: white;
+    border-radius: 25px;
+    overflow: hidden;
+    transition: 0.3s;
+    border: 2px solid transparent;
+}
+/* HOVER */
+.game-card:hover{
+    transform: translateY(-5px);
+    border: 2px solid #F1E76D;
+}
+
+/* IMAGE */
+.game-card img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover; 
+    display: block;
+}
+
+/* INFO */
+.game-info{
+    padding: 15px;
+    text-align: center;
+}
+
+.game-info h3{
+    margin-bottom: 8px;
+}
+
+.game-info p{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* BUTTONS */
+.game-actions{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* BOOK BUTTON */
+.book-btn{
+    background-color: #373856;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+cursor: pointer;
+    transition: 0.3s;
+}
+
+.book-btn:hover{
+    background-color: #F1E76D;
+    color: black;
+}
+
+/* DETAILS */
+.details-btn{
+    border: 1px solid #373856;
+    background: transparent;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav { flex-direction: column; padding: 15px 20px; gap: 10px; }
+    nav ul { flex-direction: column; gap: 8px; }
+    nav ul li { margin-left: 0; }
+    .search-box input { width: 90%; }
+    .games { grid-template-columns: 1fr; padding: 20px; }
+    .game-card { width: 100%; }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link id="theme-style"
+        rel="stylesheet"
+        href="CSS/style.css"
+        data-light="CSS/style.css"
+        data-dark="CSS/theme-2.css">
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="videos/WhatsApp Video 2026-04-28 at 10.14.04 PM.mp4" type="video/mp4">
+    </video>
+
+    <button id="btn2" class="theme-toggle">Change Mode</button>
+
+    <div class="signup-box">
+        <form id="signupForm" novalidate>
+
+            <div class="input-box1">
+                <label>Username :</label>
+                <input type="text" name="username" placeholder="Enter your username" required>
+            </div>
+
+            <div class="input-box1">
+                <label>Email :</label>
+                <input type="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="input-box1">
+                <label>Password :</label>
+                <input type="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <div class="input-box1">
+                <label>Confirm Password :</label>
+                <input type="password" name="confirmPassword" placeholder="Confirm your password" required>
+            </div>
+
+            <div class="input-box1">
+                <label>Age :</label>
+                <input type="number" name="age" placeholder="Enter your age" min="1" required>
+            </div>
+
+            <div class="input-box1">
+                <label>Gender :</label>
+                <select name="gender" required>
+                    <option value="">Select your gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+
+            <div class="form-message"></div>
+            <button type="submit" class="btn">Sign Up</button>
+        </form>
+
+        <div class="footer">
+            <p>Already have an account?
+                <a href="index.html" class="link">Login</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+body{
+    background-image: url(../IMG/pexels-danita-white-2147858101-30505026.jpg);
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+.tk{
+    width: 200px;
+    height: auto;
+    margin: 20px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.tickets {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* نخفي الراديو خالص */
+.tickets input[type="radio"] {
+    display: none;
+}
+
+/* شكل الصور */
+.tickets label img {
+    width: 250px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: 3px solid transparent;
+    transition: 0.3s;
+}
+
+/* hover */
+.tickets label img:hover {
+    transform: scale(1.05);
+}
+
+/* لما تتختار */
+.tickets input:checked + label img {
+    border: 3px solid #00bcd4;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+} 
+.form_box{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: 50px auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+h1{
+    font-size: 50px;
+    color: #e2da94;
+    text-align: center;
+    left: 50%;
+}
+input {
+    width: 100%;
+    padding: 25px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #e2da94;
+} 
+label {
+    text-align: center;
+    font-size: 25px;
+    color: #333;
+    margin-top: 10px;
+    display: block;
+}
+input[type="submit"] {
+    width: 50%;
+    height: 55px;
+    margin: 0 auto;
+    display: block;
+    background-color: #e2da94;
+}
+
+input[type="reset"] {
+    width: 50%;
+    height: 55px;
+    margin: 10px auto;
+    display: block;
+    background-color: #e2da94;
+}
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #ffffff;
+    color: #cfc357;
+}
+input::placeholder { 
+    opacity: 0;
+    transition: 0.5s;
+}
+input:hover::placeholder {
+    opacity: 1;
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+    padding:15px 50px;
+    background-color:#FEFCE0;
+    color:black;
+}
+nav ul{
+    display:flex;
+    list-style: none;
+}
+nav ul li{
+    margin-left: 20px;
+} 
+nav ul li a{
+    color:black;
+    text-decoration:none;
+}
+nav a:hover{
+    color:rgb(85, 143, 85);
+}
+
+@media (max-width: 768px) {
+    nav { flex-direction: column; padding: 15px 20px; gap: 10px; }
+    nav ul { flex-direction: column; gap: 8px; }
+    nav ul li { margin-left: 0; }
+    .form_box { margin: 20px; padding: 20px; }
+    .tickets { flex-direction: column; align-items: center; }
+    .tickets label img { width: 180px; }
+    h1 { font-size: 30px; }
+    input[type="submit"], input[type="reset"] { width: 80%; }
+    #home_bt { margin: 0; }
+}
+
+#home_bt{
+    margin-top: -5px;
+    background: rgba(139, 173, 139);
+    color: #373B56;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}

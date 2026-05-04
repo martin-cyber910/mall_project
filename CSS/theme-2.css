@@ -1,0 +1,223 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+
+#bg-video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.content{
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* العنوان */
+h2 {
+    margin-top: 100PX;
+    margin-left: 300px;
+    FONT-SIZE: 50PX;
+    position: absolute;
+    top: 30px;
+    color: #F1B76D;
+}
+
+
+.login-box,
+.signup-box {
+    margin-top: 10px;
+    width: 850px;
+    height: 750px;
+    margin-left: -10px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+
+
+.input-box {
+    margin: auto;
+    width: 50%;
+    margin-bottom: 15px; 
+}
+.input-box:first-of-type
+{
+    margin-top: 250px;}
+
+
+label {
+    font-size: 14px;
+    color: #000000;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    background: #2a2d45;
+    color: white;
+    transition: 0.3s;
+}
+
+
+input:focus,
+select:focus {
+    border-color: #F1B76D;
+    box-shadow: 0 0 10px rgba(241, 183, 109, 0.5);
+}
+
+
+input::placeholder {
+    color: #aaa;
+}
+
+
+.btn {
+    width: 50%;
+    margin: 0 195px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #F1B76D;
+    color: #373B56;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.btn:hover {
+    background: #ffcc8a;
+    transform: scale(1.05);
+}
+
+
+.footer {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+.link {
+    color: #F1B76D;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+
+.form-message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    display: none;
+}
+
+.form-message.success {
+    display: block;
+    margin: 15px auto;
+    width: 50%;
+    background: rgba(0, 255, 150, 0.1);
+    color: #00ff95;
+}
+
+.form-message.error {
+    display: block;
+    margin: 15px auto;
+    width: 50%;
+    background: rgba(255, 0, 0, 0.1);
+    color: #ff4d4d;
+}
+#btn1{
+    position: absolute;
+    top: 240px;
+    left: 350px;
+    z-index: 10;
+    padding: 10px 15px;
+    background: #F1B76D;
+    color: #373B56;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.input-box1 {
+    margin: auto;
+    width: 50%;
+    margin-bottom: 15px; 
+}
+.input-box1:first-of-type {
+    margin-top: 75px;}
+
+
+    #btn2{
+    position: absolute;
+    top: 50px;
+    left: 350px;
+    z-index: 10;
+    padding: 10px 15px;
+    background: #F1B76D;
+    color: #373B56;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+@media (max-width: 768px) {
+    .login-box,
+    .signup-box {
+        width: 92%;
+        height: auto;
+        margin: 0;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        position: fixed;
+        padding: 25px 20px;
+    }
+    .input-box { width: 90%; }
+    .input-box:first-of-type { margin-top: 30px; }
+    .input-box1 { width: 90%; flex-direction: column; align-items: flex-start; gap: 5px; }
+    .input-box1 label { min-width: unset; }
+    .input-box1 input, .input-box1 select { width: 100%; }
+    .btn { width: 80%; margin: 10px auto; }
+    .form-message { width: 90%; }
+    #btn1, #btn2 {
+        position: relative;
+        top: auto; left: auto;
+        display: block;
+        margin: 10px auto;
+    }
+}

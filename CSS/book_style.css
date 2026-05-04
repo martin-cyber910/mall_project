@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background-image: url(https://images.pexels.com/photos/1790556/pexels-photo-1790556.jpeg);
+    background-size: cover;
+   
+}
+
+nav{
+    background:#4D6056;
+    padding:15px 40px;
+    text-align:center;
+}
+
+nav h2{
+    color:white;
+    font-size:30px;
+}
+
+
+.container{
+    width:500px;
+    background:white;
+    margin:50px auto;
+    padding:35px;
+    border-radius:15px;
+    
+}
+
+.container h1{
+    text-align:center;
+    color:#4D6056;
+    margin-bottom:25px;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:5px;
+    color:#333;
+    font-weight:bold;
+}
+
+input, select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+button{
+    width:100%;
+    margin-top:25px;
+    padding:14px;
+    background:#4D6056;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#0a2e20;
+}
+
+footer{
+    background:#4D6056;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+} 
+#book_bt{
+    width: 25%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px ;
+    background: #0a2e20;
+    border: none;
+        outline: none}
+
+@media (max-width: 768px) {
+    .container { width: 92%; margin: 20px auto; padding: 20px; }
+    #book_bt { width: 60%; }
+}

@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+body{
+    background-color: #FEFCE0;
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+    padding:15px 50px;
+    background-color:#FEFCE0;
+    color:black;
+}
+nav ul{
+    display:flex;
+    list-style: none;
+}
+nav ul li{
+    margin-left: 20px;
+} 
+nav ul li a{
+    color:black;
+    text-decoration:none;
+}
+nav a:hover{
+    color:rgb(85, 143, 85);
+}
+.main-section{
+     height:100vh;
+      background-image:url('../IMG/pexels-mxkrv-3655916-13425897.jpg');
+     background-size: cover;
+     background-position:center;
+     display:flex;
+     justify-content:flex-start;
+     align-items: flex-end;
+     padding:60px 50px 240px 50px;
+     height:60vh;
+}
+.main-text{
+   background-color:rgba(165, 214, 179, 0.9);
+   padding:40px 60px;
+   border-radius: 15px;
+   text-align:left;
+   max-width:600px;
+   height:23vh;
+}
+.main-content h1{
+    font-size:70px;
+    margin-top:15px;
+}
+button{
+    margin-top:10px;
+    padding:10px 20px;
+    background-color:#FEFCE0;
+}
+button:hover{
+   background-color:rgb(151, 209, 151);
+}
+.categories{
+    padding:15px 40px;
+}
+.section-title{
+     margin-bottom: 0px;
+}
+.category-grid{
+    display:flex;
+    justify-content: space-around;
+    padding:10px 20px;
+    gap:40px;
+}
+.card{
+    background-color:rgba(139, 173, 139);
+    border-radius: 10px;
+    padding:10px;
+    cursor:pointer;
+}
+.card:hover{
+    background-color: rgb(42, 90, 42);
+}
+footer{
+    text-align: center;
+    background-color:#FEFCE0;
+    margin-top:37px;
+}
+
+#home_bt{
+    margin-top: -5px;
+    background: rgba(139, 173, 139);
+    color: #373B56;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    nav { flex-direction: column; padding: 15px 20px; gap: 10px; }
+    nav ul { flex-direction: column; gap: 8px; }
+    nav ul li { margin-left: 0; }
+    .main-section { padding: 30px 20px 80px 20px; height: auto; min-height: 40vh; }
+    .main-text { padding: 20px; max-width: 100%; height: auto; }
+    .category-grid { flex-direction: column; gap: 15px; padding: 10px; }
+    .card { width: 100%; }
+    #home_bt { margin: 0; }
+}

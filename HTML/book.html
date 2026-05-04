@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Now</title>
+
+<link id="theme-style"
+    rel="stylesheet"
+    href="../CSS/book_style.css"
+    data-light="../CSS/book_style.css"
+    data-dark="../CSS/book_theme_2.css">
+</head>
+
+<body>
+
+<nav>
+    <h2>ABSOLUTE CINEMA</h2>
+</nav>
+<button id= "book_bt"class="theme-toggle">Change Mode</button>
+<div class="container">
+    <h1>Book Your Ticket</h1>
+
+    <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Select Movie</label>
+        <select>
+            <option>AVENGERS END GAME</option>
+            <option>HAMNET</option>
+            <option>IT</option>
+            <option>LA LA LAND</option>
+            <option>INTERSTELLAR</option>
+            <option>CREED</option>
+            <option>SCARFACE</option>
+            <option>THE GOD FATHER</option>
+        </select>
+
+        <label>Date</label>
+        <input type="date">
+
+        <label>Time</label>
+        <select>
+            <option>12:00 PM</option>
+            <option>3:00 PM</option>
+            <option>6:00 PM</option>
+            <option>9:00 PM</option>
+        </select>
+
+        <label>Seats</label>
+        <input type="number" min="1" max="10" placeholder="Number of seats">
+
+        <button type="submit">Confirm Booking</button>
+    </form>
+</div>
+
+<footer>
+© 2026 City Mall | All Rights Reserved
+</footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
