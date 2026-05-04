@@ -163,18 +163,18 @@ h2 {
 #bg-video{
     display: none;
 }
-#btn1 {
-    display: block;
-    margin: -50px auto;
-    padding: 10px 15px;
+#btn1{
+    position: absolute;
+    top: 180px;
+    left: 715px;
+    z-index: 10;
+    padding: 10px 5px;
     background: #F1B76D;
     color: #373B56;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
-    position: relative;
-    z-index: 10;
 }
 
 #btn2{
